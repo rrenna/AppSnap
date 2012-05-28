@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'App SnapTests' target in the 'App SnapTests' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

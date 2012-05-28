@@ -1,0 +1,214 @@
+// !$*UTF8*$!
+{
+	A60D115D1335114F00BA09C3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A68D617D13085AFC008320AF /* App_SnapAppDelegate.m */;
+		name = "App_SnapAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1046;
+		vrLoc = 0;
+	};
+	A61150AB131180920014E1F7 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = A68D617213085AFC008320AF /* App_Snap-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			NSPrincipalClass,
+		);
+		name = "/Programming/App Snap/App Snap/App Snap/App_Snap-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	A611510213118A540014E1F7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A68D617613085AFC008320AF /* App_Snap-Prefix.pch */;
+		name = "App_Snap-Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 173;
+		vrLoc = 0;
+	};
+	A611510313118A540014E1F7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A6546E58130A06170044F8CB /* en */;
+		name = "en: 17";
+		rLen = 0;
+		rLoc = 185;
+		rType = 0;
+		vrLen = 185;
+		vrLoc = 0;
+	};
+	A611510413118A540014E1F7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A68D617C13085AFC008320AF /* App_SnapAppDelegate.h */;
+		name = "App_SnapAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1579;
+		vrLoc = 0;
+	};
+	A621CB981311525D00270181 /* App Snap */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "App Snap";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A621CBB01311525F00270181 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A621CBB11311525F00270181 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	A6546E58130A06170044F8CB /* en */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {681, 657}}";
+			sepNavSelRange = "{174, 0}";
+			sepNavVisRect = "{{0, 0}, {681, 657}}";
+		};
+	};
+	A65AD6ED1330711B00FD47AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A68D617D13085AFC008320AF /* App_SnapAppDelegate.m */;
+		name = "App_SnapAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 0;
+	};
+	A68D615D13085AFC008320AF /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A621CB981311525D00270181 /* App Snap */;
+		activeTarget = A68D616513085AFC008320AF /* App Snap */;
+		codeSenseManager = A621CBB11311525F00270181 /* Code sense */;
+		executables = (
+			A621CB981311525D00270181 /* App Snap */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					408,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					449,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 322244882;
+			PBXWorkspaceStateSaveDate = 322244882;
+		};
+		perUserProjectItems = {
+			A60D115D1335114F00BA09C3 /* PBXTextBookmark */ = A60D115D1335114F00BA09C3 /* PBXTextBookmark */;
+			A61150AB131180920014E1F7 /* PlistBookmark */ = A61150AB131180920014E1F7 /* PlistBookmark */;
+			A611510213118A540014E1F7 /* PBXTextBookmark */ = A611510213118A540014E1F7 /* PBXTextBookmark */;
+			A611510313118A540014E1F7 /* PBXTextBookmark */ = A611510313118A540014E1F7 /* PBXTextBookmark */;
+			A611510413118A540014E1F7 /* PBXTextBookmark */ = A611510413118A540014E1F7 /* PBXTextBookmark */;
+			A65AD6ED1330711B00FD47AA /* PBXTextBookmark */ = A65AD6ED1330711B00FD47AA /* PBXTextBookmark */;
+		};
+		sourceControlManager = A621CBB01311525F00270181 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A68D616513085AFC008320AF /* App Snap */ = {
+		activeExec = 0;
+		executables = (
+			A621CB981311525D00270181 /* App Snap */,
+		);
+	};
+	A68D617613085AFC008320AF /* App_Snap-Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {667, 665}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 173}";
+		};
+	};
+	A68D617C13085AFC008320AF /* App_SnapAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {667, 784}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1579}";
+		};
+	};
+	A68D617D13085AFC008320AF /* App_SnapAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {852, 6972}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1046}";
+		};
+	};
+	A68D618613085AFC008320AF /* App SnapTests */ = {
+		activeExec = 0;
+	};
+}

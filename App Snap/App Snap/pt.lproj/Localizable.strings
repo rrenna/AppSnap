@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  App Snap
+
+  Created by Ryan Renna on 11-04-08.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+"Save As..." = "Save As...";
+"ios simulator" = "ios simulator";
+"I'm sorry but..." = "I'm sorry but...";
+"You don't seem to have an instance of the iOS Simulator open." = "You don't seem to have an instance of the iOS Simulator open.";

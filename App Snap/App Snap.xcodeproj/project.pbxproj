@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60DE4071336D9330067CBDA /* WindowSnapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A60DE4061336D9330067CBDA /* WindowSnapper.m */; };
+		A60DE40A1336DB010067CBDA /* Snapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A60DE4091336DB010067CBDA /* Snapper.m */; };
+		A61D7CCE130CBA51009407A2 /* WindowPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61D7CCD130CBA51009407A2 /* WindowPicker.xib */; };
+		A61D7CD3130CBAA0009407A2 /* WindowPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D7CD1130CBAA0009407A2 /* WindowPickerController.m */; };
+		A6242B411339682200CA4369 /* AndroidSimulatorSnapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6242B401339682200CA4369 /* AndroidSimulatorSnapper.m */; };
+		A6242B431339AA5B00CA4369 /* SnapShortcutGraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A6242B421339AA5B00CA4369 /* SnapShortcutGraphic.png */; };
+		A6242B451339B68F00CA4369 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6242B441339B68F00CA4369 /* QuartzCore.framework */; };
+		A6546E59130A06170044F8CB /* Credits.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = A6546E57130A06170044F8CB /* Credits.rtfd */; };
+		A65C04B0133AF94A00078C8D /* History.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65C04AF133AF94A00078C8D /* History.xib */; };
+		A65C04B2133AFAF500078C8D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65C04B1133AFAF500078C8D /* Quartz.framework */; };
+		A65C04B6133AFB5500078C8D /* HistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65C04B4133AFB5500078C8D /* HistoryController.m */; };
+		A665D024130A059C0090CAE0 /* OffblastLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A665D023130A059C0090CAE0 /* OffblastLogo.png */; };
+		A672C6E913273A55004F35CE /* App_Snap-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D617213085AFC008320AF /* App_Snap-Info.plist */; };
+		A672C6F113274066004F35CE /* AppSnap Help in Resources */ = {isa = PBXBuildFile; fileRef = A672C6F013274066004F35CE /* AppSnap Help */; };
+		A676AEBA134FFEDC002BEE01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A676AEBC134FFEDC002BEE01 /* Localizable.strings */; };
+		A679331B13382D9D00248B13 /* SimulatorSnapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A679331A13382D9C00248B13 /* SimulatorSnapper.m */; };
+		A67C4E03133845E20077060A /* IOSSimulatorSnapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C4E02133845E20077060A /* IOSSimulatorSnapper.m */; };
+		A68D616B13085AFC008320AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D616A13085AFC008320AF /* Cocoa.framework */; };
+		A68D617513085AFC008320AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A68D617313085AFC008320AF /* InfoPlist.strings */; };
+		A68D617813085AFC008320AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D617713085AFC008320AF /* main.m */; };
+		A68D617E13085AFC008320AF /* App_SnapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D617D13085AFC008320AF /* App_SnapAppDelegate.m */; };
+		A68D618113085AFC008320AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D617F13085AFC008320AF /* MainMenu.xib */; };
+		A68D618813085AFC008320AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D616A13085AFC008320AF /* Cocoa.framework */; };
+		A68D619013085AFD008320AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A68D618E13085AFD008320AF /* InfoPlist.strings */; };
+		A68D619313085AFD008320AF /* App_SnapTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A68D619213085AFD008320AF /* App_SnapTests.h */; };
+		A68D619513085AFD008320AF /* App_SnapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D619413085AFD008320AF /* App_SnapTests.m */; };
+		A68D61A3130861C8008320AF /* WindowSnapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D61A2130861C8008320AF /* WindowSnapHelper.m */; };
+		A68D61B11308A588008320AF /* DraggableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D61B01308A588008320AF /* DraggableImageView.m */; };
+		A68D61C71308C62B008320AF /* snapShortcut.png in Resources */ = {isa = PBXBuildFile; fileRef = A68D61C61308C62B008320AF /* snapShortcut.png */; };
+		A68D61E21308E0D4008320AF /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68D61E11308E0D4008320AF /* Carbon.framework */; };
+		A68D61E61308E104008320AF /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A68D61E51308E103008320AF /* DDHotKeyCenter.m */; };
+		A69A900F130B48800023E0FD /* iOSIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A69A900D130B48800023E0FD /* iOSIcon.png */; };
+		A69A9010130B48800023E0FD /* macOSIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A69A900E130B48800023E0FD /* macOSIcon.png */; };
+		A6B23FAC13419D56008402B7 /* SimulatorCropWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B23FAB13419D56008402B7 /* SimulatorCropWindow.xib */; };
+		A6BD3E831335478F00E8B41A /* AppSnapLogoV2512.icns in Resources */ = {isa = PBXBuildFile; fileRef = A6BD3E821335478F00E8B41A /* AppSnapLogoV2512.icns */; };
+		A6BD3E85133551A100E8B41A /* AppSnapLogoV1.icns in Resources */ = {isa = PBXBuildFile; fileRef = A6BD3E84133551A100E8B41A /* AppSnapLogoV1.icns */; };
+		A6BD3E9B13359AEC00E8B41A /* androidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BD3E9A13359AEC00E8B41A /* androidIcon.png */; };
+		A6BD3EA31336BDD800E8B41A /* SnapButtonUnpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BD3EA21336BDD800E8B41A /* SnapButtonUnpressed.png */; };
+		A6BD3EAD1336C07500E8B41A /* backgroundTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BD3EAC1336C07500E8B41A /* backgroundTexture.png */; };
+		A6CCB35D130E384900BA31E6 /* stock-desktop.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CCB35C130E384900BA31E6 /* stock-desktop.png */; };
+		A6DE6E76130E186E00D79BD8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DE6E75130E186E00D79BD8 /* Constants.m */; };
+		F009E276144E55D000C5D930 /* NSWindow_Flipr.m in Sources */ = {isa = PBXBuildFile; fileRef = F009E275144E55D000C5D930 /* NSWindow_Flipr.m */; };
+		F009E278144E561600C5D930 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F009E277144E561600C5D930 /* OpenGL.framework */; };
+		F009E27B144E625A00C5D930 /* SnapButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = F009E279144E625A00C5D930 /* SnapButton2.png */; };
+		F009E27C144E625A00C5D930 /* SettingsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F009E27A144E625A00C5D930 /* SettingsButton.png */; };
+		F009E27E144E651600C5D930 /* bottomBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F009E27D144E651600C5D930 /* bottomBackground.png */; };
+		F0396487137F32C500E27BDF /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = F0396486137F32C500E27BDF /* RegexKitLite.m */; };
+		F0396489137F33D600E27BDF /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0396488137F33D600E27BDF /* libicucore.dylib */; };
+		F0D50BB5145B81C300805C9C /* AppSnapLogoV2.icns in Resources */ = {isa = PBXBuildFile; fileRef = F0D50BB4145B81C300805C9C /* AppSnapLogoV2.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A68D618913085AFC008320AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A68D615D13085AFC008320AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A68D616513085AFC008320AF;
+			remoteInfo = "App Snap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A60DE4051336D9330067CBDA /* WindowSnapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowSnapper.h; sourceTree = "<group>"; };
+		A60DE4061336D9330067CBDA /* WindowSnapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowSnapper.m; sourceTree = "<group>"; };
+		A60DE4081336DB010067CBDA /* Snapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snapper.h; sourceTree = "<group>"; };
+		A60DE4091336DB010067CBDA /* Snapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snapper.m; sourceTree = "<group>"; };
+		A61D7CCD130CBA51009407A2 /* WindowPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowPicker.xib; sourceTree = "<group>"; };
+		A61D7CD0130CBA9F009407A2 /* WindowPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowPickerController.h; sourceTree = "<group>"; };
+		A61D7CD1130CBAA0009407A2 /* WindowPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowPickerController.m; sourceTree = "<group>"; };
+		A6242B3F1339682200CA4369 /* AndroidSimulatorSnapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidSimulatorSnapper.h; sourceTree = "<group>"; };
+		A6242B401339682200CA4369 /* AndroidSimulatorSnapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndroidSimulatorSnapper.m; sourceTree = "<group>"; };
+		A6242B421339AA5B00CA4369 /* SnapShortcutGraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnapShortcutGraphic.png; path = ../../Resources/SnapShortcutGraphic.png; sourceTree = "<group>"; };
+		A6242B441339B68F00CA4369 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6546E58130A06170044F8CB /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = en; path = en.lproj/Credits.rtfd; sourceTree = "<group>"; };
+		A65C04AF133AF94A00078C8D /* History.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
+		A65C04B1133AFAF500078C8D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		A65C04B3133AFB5500078C8D /* HistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryController.h; sourceTree = "<group>"; };
+		A65C04B4133AFB5500078C8D /* HistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryController.m; sourceTree = "<group>"; };
+		A665D023130A059C0090CAE0 /* OffblastLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OffblastLogo.png; sourceTree = "<group>"; };
+		A672C6F013274066004F35CE /* AppSnap Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "AppSnap Help"; sourceTree = SOURCE_ROOT; };
+		A676AEBB134FFEDC002BEE01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A676AEBD134FFF03002BEE01 /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A676AEBE13500348002BEE01 /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A676AEC513500497002BEE01 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A676AEC6135004F4002BEE01 /* it */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A676AEC71350053C002BEE01 /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A676AEC913500703002BEE01 /* ru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A676AECA13500817002BEE01 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A676AECB1350087A002BEE01 /* zh-Hant */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A676AECC13500EE3002BEE01 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A679331913382D9C00248B13 /* SimulatorSnapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatorSnapper.h; sourceTree = "<group>"; };
+		A679331A13382D9C00248B13 /* SimulatorSnapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulatorSnapper.m; sourceTree = "<group>"; };
+		A67C4E01133845E20077060A /* IOSSimulatorSnapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSSimulatorSnapper.h; sourceTree = "<group>"; };
+		A67C4E02133845E20077060A /* IOSSimulatorSnapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSSimulatorSnapper.m; sourceTree = "<group>"; };
+		A68D616613085AFC008320AF /* App Snap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Snap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68D616A13085AFC008320AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A68D616D13085AFC008320AF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A68D616E13085AFC008320AF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A68D616F13085AFC008320AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A68D617213085AFC008320AF /* App_Snap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App_Snap-Info.plist"; sourceTree = "<group>"; };
+		A68D617413085AFC008320AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A68D617613085AFC008320AF /* App_Snap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App_Snap-Prefix.pch"; sourceTree = "<group>"; };
+		A68D617713085AFC008320AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A68D617C13085AFC008320AF /* App_SnapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App_SnapAppDelegate.h; sourceTree = "<group>"; };
+		A68D617D13085AFC008320AF /* App_SnapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App_SnapAppDelegate.m; sourceTree = "<group>"; };
+		A68D618013085AFC008320AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A68D618713085AFC008320AF /* App SnapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App SnapTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68D618D13085AFC008320AF /* App_SnapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App_SnapTests-Info.plist"; sourceTree = "<group>"; };
+		A68D618F13085AFD008320AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A68D619113085AFD008320AF /* App_SnapTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App_SnapTests-Prefix.pch"; sourceTree = "<group>"; };
+		A68D619213085AFD008320AF /* App_SnapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App_SnapTests.h; sourceTree = "<group>"; };
+		A68D619413085AFD008320AF /* App_SnapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App_SnapTests.m; sourceTree = "<group>"; };
+		A68D61A1130861C8008320AF /* WindowSnapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowSnapHelper.h; sourceTree = "<group>"; };
+		A68D61A2130861C8008320AF /* WindowSnapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowSnapHelper.m; sourceTree = "<group>"; };
+		A68D61AF1308A588008320AF /* DraggableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableImageView.h; sourceTree = "<group>"; };
+		A68D61B01308A588008320AF /* DraggableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableImageView.m; sourceTree = "<group>"; };
+		A68D61C61308C62B008320AF /* snapShortcut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapShortcut.png; sourceTree = "<group>"; };
+		A68D61E11308E0D4008320AF /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A68D61E41308E102008320AF /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		A68D61E51308E103008320AF /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		A69A900D130B48800023E0FD /* iOSIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOSIcon.png; sourceTree = "<group>"; };
+		A69A900E130B48800023E0FD /* macOSIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macOSIcon.png; sourceTree = "<group>"; };
+		A6B23FAB13419D56008402B7 /* SimulatorCropWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimulatorCropWindow.xib; sourceTree = "<group>"; };
+		A6BD3E821335478F00E8B41A /* AppSnapLogoV2512.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AppSnapLogoV2512.icns; path = ../../Resources/AppSnapLogoV2512.icns; sourceTree = "<group>"; };
+		A6BD3E84133551A100E8B41A /* AppSnapLogoV1.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AppSnapLogoV1.icns; path = ../../Resources/AppSnapLogoV1.icns; sourceTree = "<group>"; };
+		A6BD3E9A13359AEC00E8B41A /* androidIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = androidIcon.png; path = ../../Resources/androidIcon.png; sourceTree = "<group>"; };
+		A6BD3EA21336BDD800E8B41A /* SnapButtonUnpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnapButtonUnpressed.png; path = ../../Resources/SnapButtonUnpressed.png; sourceTree = "<group>"; };
+		A6BD3EAC1336C07500E8B41A /* backgroundTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundTexture.png; path = ../../Resources/backgroundTexture.png; sourceTree = "<group>"; };
+		A6CCB35C130E384900BA31E6 /* stock-desktop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stock-desktop.png"; sourceTree = "<group>"; };
+		A6DE6E74130E186E00D79BD8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A6DE6E75130E186E00D79BD8 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		F009E274144E55D000C5D930 /* NSWindow_Flipr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWindow_Flipr.h; sourceTree = "<group>"; };
+		F009E275144E55D000C5D930 /* NSWindow_Flipr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWindow_Flipr.m; sourceTree = "<group>"; };
+		F009E277144E561600C5D930 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F009E279144E625A00C5D930 /* SnapButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnapButton2.png; path = ../../Resources/SnapButton2.png; sourceTree = "<group>"; };
+		F009E27A144E625A00C5D930 /* SettingsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SettingsButton.png; path = ../../Resources/SettingsButton.png; sourceTree = "<group>"; };
+		F009E27D144E651600C5D930 /* bottomBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottomBackground.png; path = ../../Resources/bottomBackground.png; sourceTree = "<group>"; };
+		F0396485137F32C500E27BDF /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		F0396486137F32C500E27BDF /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		F0396488137F33D600E27BDF /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F0D50BB4145B81C300805C9C /* AppSnapLogoV2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AppSnapLogoV2.icns; path = ../../Resources/AppSnapLogoV2.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A68D616313085AFC008320AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F009E278144E561600C5D930 /* OpenGL.framework in Frameworks */,
+				F0396489137F33D600E27BDF /* libicucore.dylib in Frameworks */,
+				A65C04B2133AFAF500078C8D /* Quartz.framework in Frameworks */,
+				A6242B451339B68F00CA4369 /* QuartzCore.framework in Frameworks */,
+				A68D61E21308E0D4008320AF /* Carbon.framework in Frameworks */,
+				A68D616B13085AFC008320AF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68D618313085AFC008320AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D618813085AFC008320AF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6546E5A130A10780044F8CB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F0D50BB4145B81C300805C9C /* AppSnapLogoV2.icns */,
+				F009E279144E625A00C5D930 /* SnapButton2.png */,
+				F009E27A144E625A00C5D930 /* SettingsButton.png */,
+				A6242B421339AA5B00CA4369 /* SnapShortcutGraphic.png */,
+				F009E27D144E651600C5D930 /* bottomBackground.png */,
+				A6BD3EAC1336C07500E8B41A /* backgroundTexture.png */,
+				A6BD3EA21336BDD800E8B41A /* SnapButtonUnpressed.png */,
+				A6BD3E9A13359AEC00E8B41A /* androidIcon.png */,
+				A6BD3E84133551A100E8B41A /* AppSnapLogoV1.icns */,
+				A6BD3E821335478F00E8B41A /* AppSnapLogoV2512.icns */,
+				A6CCB35C130E384900BA31E6 /* stock-desktop.png */,
+				A69A900D130B48800023E0FD /* iOSIcon.png */,
+				A69A900E130B48800023E0FD /* macOSIcon.png */,
+				A665D023130A059C0090CAE0 /* OffblastLogo.png */,
+				A68D61C61308C62B008320AF /* snapShortcut.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A67C4E001338458B0077060A /* Snappers */ = {
+			isa = PBXGroup;
+			children = (
+				A60DE4051336D9330067CBDA /* WindowSnapper.h */,
+				A60DE4061336D9330067CBDA /* WindowSnapper.m */,
+				A60DE4081336DB010067CBDA /* Snapper.h */,
+				A60DE4091336DB010067CBDA /* Snapper.m */,
+				A679331913382D9C00248B13 /* SimulatorSnapper.h */,
+				A679331A13382D9C00248B13 /* SimulatorSnapper.m */,
+				A67C4E01133845E20077060A /* IOSSimulatorSnapper.h */,
+				A67C4E02133845E20077060A /* IOSSimulatorSnapper.m */,
+				A6242B3F1339682200CA4369 /* AndroidSimulatorSnapper.h */,
+				A6242B401339682200CA4369 /* AndroidSimulatorSnapper.m */,
+			);
+			name = Snappers;
+			sourceTree = "<group>";
+		};
+		A68D615B13085AFB008320AF = {
+			isa = PBXGroup;
+			children = (
+				A68D617013085AFC008320AF /* App Snap */,
+				A68D618B13085AFC008320AF /* App SnapTests */,
+				A68D616913085AFC008320AF /* Frameworks */,
+				A68D616713085AFC008320AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A68D616713085AFC008320AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A68D616613085AFC008320AF /* App Snap.app */,
+				A68D618713085AFC008320AF /* App SnapTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A68D616913085AFC008320AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F009E277144E561600C5D930 /* OpenGL.framework */,
+				F0396488137F33D600E27BDF /* libicucore.dylib */,
+				A65C04B1133AFAF500078C8D /* Quartz.framework */,
+				A6242B441339B68F00CA4369 /* QuartzCore.framework */,
+				A68D61E11308E0D4008320AF /* Carbon.framework */,
+				A68D616A13085AFC008320AF /* Cocoa.framework */,
+				A68D616C13085AFC008320AF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A68D616C13085AFC008320AF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A68D616D13085AFC008320AF /* AppKit.framework */,
+				A68D616E13085AFC008320AF /* CoreData.framework */,
+				A68D616F13085AFC008320AF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A68D617013085AFC008320AF /* App Snap */ = {
+			isa = PBXGroup;
+			children = (
+				F009E271144E559300C5D930 /* Frameworks */,
+				A6DE6E72130E185200D79BD8 /* Controllers */,
+				A68D61E71308E10D008320AF /* Hotkeys */,
+				A68D61AD1308A3A1008320AF /* Helpers */,
+				A68D61AC1308A393008320AF /* Views */,
+				A68D617C13085AFC008320AF /* App_SnapAppDelegate.h */,
+				A68D617D13085AFC008320AF /* App_SnapAppDelegate.m */,
+				A68D61AE1308A3AD008320AF /* Resources */,
+				A68D617113085AFC008320AF /* Supporting Files */,
+				A6DE6E74130E186E00D79BD8 /* Constants.h */,
+				A6DE6E75130E186E00D79BD8 /* Constants.m */,
+			);
+			path = "App Snap";
+			sourceTree = "<group>";
+		};
+		A68D617113085AFC008320AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6546E57130A06170044F8CB /* Credits.rtfd */,
+				A68D617213085AFC008320AF /* App_Snap-Info.plist */,
+				A68D617313085AFC008320AF /* InfoPlist.strings */,
+				A68D617613085AFC008320AF /* App_Snap-Prefix.pch */,
+				A68D617713085AFC008320AF /* main.m */,
+				A676AEBC134FFEDC002BEE01 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A68D618B13085AFC008320AF /* App SnapTests */ = {
+			isa = PBXGroup;
+			children = (
+				A68D619213085AFD008320AF /* App_SnapTests.h */,
+				A68D619413085AFD008320AF /* App_SnapTests.m */,
+				A68D618C13085AFC008320AF /* Supporting Files */,
+			);
+			path = "App SnapTests";
+			sourceTree = "<group>";
+		};
+		A68D618C13085AFC008320AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A68D618D13085AFC008320AF /* App_SnapTests-Info.plist */,
+				A68D618E13085AFD008320AF /* InfoPlist.strings */,
+				A68D619113085AFD008320AF /* App_SnapTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A68D61AC1308A393008320AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A68D61AF1308A588008320AF /* DraggableImageView.h */,
+				A68D61B01308A588008320AF /* DraggableImageView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A68D61AD1308A3A1008320AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A67C4E001338458B0077060A /* Snappers */,
+				A68D61A1130861C8008320AF /* WindowSnapHelper.h */,
+				A68D61A2130861C8008320AF /* WindowSnapHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A68D61AE1308A3AD008320AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A672C6F013274066004F35CE /* AppSnap Help */,
+				A6546E5A130A10780044F8CB /* Images */,
+				A68D617F13085AFC008320AF /* MainMenu.xib */,
+				A61D7CCD130CBA51009407A2 /* WindowPicker.xib */,
+				A65C04AF133AF94A00078C8D /* History.xib */,
+				A6B23FAB13419D56008402B7 /* SimulatorCropWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A68D61E71308E10D008320AF /* Hotkeys */ = {
+			isa = PBXGroup;
+			children = (
+				A68D61E41308E102008320AF /* DDHotKeyCenter.h */,
+				A68D61E51308E103008320AF /* DDHotKeyCenter.m */,
+			);
+			name = Hotkeys;
+			sourceTree = "<group>";
+		};
+		A6DE6E72130E185200D79BD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A61D7CD0130CBA9F009407A2 /* WindowPickerController.h */,
+				A61D7CD1130CBAA0009407A2 /* WindowPickerController.m */,
+				A65C04B3133AFB5500078C8D /* HistoryController.h */,
+				A65C04B4133AFB5500078C8D /* HistoryController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F009E271144E559300C5D930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F009E273144E559D00C5D930 /* NSWindow+Flipr */,
+				F0396483137F32A800E27BDF /* RegexKitLite */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F009E273144E559D00C5D930 /* NSWindow+Flipr */ = {
+			isa = PBXGroup;
+			children = (
+				F009E274144E55D000C5D930 /* NSWindow_Flipr.h */,
+				F009E275144E55D000C5D930 /* NSWindow_Flipr.m */,
+			);
+			name = "NSWindow+Flipr";
+			sourceTree = "<group>";
+		};
+		F0396483137F32A800E27BDF /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				F0396485137F32C500E27BDF /* RegexKitLite.h */,
+				F0396486137F32C500E27BDF /* RegexKitLite.m */,
+			);
+			name = RegexKitLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A68D616513085AFC008320AF /* App Snap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A68D619813085AFD008320AF /* Build configuration list for PBXNativeTarget "App Snap" */;
+			buildPhases = (
+				A68D616213085AFC008320AF /* Sources */,
+				A68D616313085AFC008320AF /* Frameworks */,
+				A68D616413085AFC008320AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App Snap";
+			productName = "App Snap";
+			productReference = A68D616613085AFC008320AF /* App Snap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A68D618613085AFC008320AF /* App SnapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A68D619B13085AFD008320AF /* Build configuration list for PBXNativeTarget "App SnapTests" */;
+			buildPhases = (
+				A68D618213085AFC008320AF /* Sources */,
+				A68D618313085AFC008320AF /* Frameworks */,
+				A68D618413085AFC008320AF /* Resources */,
+				A68D618513085AFC008320AF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A68D618A13085AFC008320AF /* PBXTargetDependency */,
+			);
+			name = "App SnapTests";
+			productName = "App SnapTests";
+			productReference = A68D618713085AFC008320AF /* App SnapTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A68D615D13085AFC008320AF /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A68D616013085AFC008320AF /* Build configuration list for PBXProject "App Snap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				de,
+				es,
+				it,
+				ja,
+				pt,
+				ru,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = A68D615B13085AFB008320AF;
+			productRefGroup = A68D616713085AFC008320AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A68D616513085AFC008320AF /* App Snap */,
+				A68D618613085AFC008320AF /* App SnapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A68D616413085AFC008320AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D617513085AFC008320AF /* InfoPlist.strings in Resources */,
+				A68D618113085AFC008320AF /* MainMenu.xib in Resources */,
+				A68D61C71308C62B008320AF /* snapShortcut.png in Resources */,
+				A665D024130A059C0090CAE0 /* OffblastLogo.png in Resources */,
+				A6546E59130A06170044F8CB /* Credits.rtfd in Resources */,
+				A69A900F130B48800023E0FD /* iOSIcon.png in Resources */,
+				A69A9010130B48800023E0FD /* macOSIcon.png in Resources */,
+				A61D7CCE130CBA51009407A2 /* WindowPicker.xib in Resources */,
+				A6CCB35D130E384900BA31E6 /* stock-desktop.png in Resources */,
+				A672C6E913273A55004F35CE /* App_Snap-Info.plist in Resources */,
+				A672C6F113274066004F35CE /* AppSnap Help in Resources */,
+				A6BD3E831335478F00E8B41A /* AppSnapLogoV2512.icns in Resources */,
+				A6BD3E85133551A100E8B41A /* AppSnapLogoV1.icns in Resources */,
+				A6BD3E9B13359AEC00E8B41A /* androidIcon.png in Resources */,
+				A6BD3EA31336BDD800E8B41A /* SnapButtonUnpressed.png in Resources */,
+				A6BD3EAD1336C07500E8B41A /* backgroundTexture.png in Resources */,
+				A6242B431339AA5B00CA4369 /* SnapShortcutGraphic.png in Resources */,
+				A65C04B0133AF94A00078C8D /* History.xib in Resources */,
+				A6B23FAC13419D56008402B7 /* SimulatorCropWindow.xib in Resources */,
+				A676AEBA134FFEDC002BEE01 /* Localizable.strings in Resources */,
+				F009E27B144E625A00C5D930 /* SnapButton2.png in Resources */,
+				F009E27C144E625A00C5D930 /* SettingsButton.png in Resources */,
+				F009E27E144E651600C5D930 /* bottomBackground.png in Resources */,
+				F0D50BB5145B81C300805C9C /* AppSnapLogoV2.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68D618413085AFC008320AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D619013085AFD008320AF /* InfoPlist.strings in Resources */,
+				A68D619313085AFD008320AF /* App_SnapTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A68D618513085AFC008320AF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A68D616213085AFC008320AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D617813085AFC008320AF /* main.m in Sources */,
+				A68D617E13085AFC008320AF /* App_SnapAppDelegate.m in Sources */,
+				A68D61A3130861C8008320AF /* WindowSnapHelper.m in Sources */,
+				A68D61B11308A588008320AF /* DraggableImageView.m in Sources */,
+				A68D61E61308E104008320AF /* DDHotKeyCenter.m in Sources */,
+				A61D7CD3130CBAA0009407A2 /* WindowPickerController.m in Sources */,
+				A6DE6E76130E186E00D79BD8 /* Constants.m in Sources */,
+				A60DE4071336D9330067CBDA /* WindowSnapper.m in Sources */,
+				A60DE40A1336DB010067CBDA /* Snapper.m in Sources */,
+				A679331B13382D9D00248B13 /* SimulatorSnapper.m in Sources */,
+				A67C4E03133845E20077060A /* IOSSimulatorSnapper.m in Sources */,
+				A6242B411339682200CA4369 /* AndroidSimulatorSnapper.m in Sources */,
+				A65C04B6133AFB5500078C8D /* HistoryController.m in Sources */,
+				F0396487137F32C500E27BDF /* RegexKitLite.m in Sources */,
+				F009E276144E55D000C5D930 /* NSWindow_Flipr.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68D618213085AFC008320AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68D619513085AFD008320AF /* App_SnapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A68D618A13085AFC008320AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A68D616513085AFC008320AF /* App Snap */;
+			targetProxy = A68D618913085AFC008320AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6546E57130A06170044F8CB /* Credits.rtfd */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6546E58130A06170044F8CB /* en */,
+			);
+			name = Credits.rtfd;
+			sourceTree = "<group>";
+		};
+		A676AEBC134FFEDC002BEE01 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A676AEBB134FFEDC002BEE01 /* en */,
+				A676AEBD134FFF03002BEE01 /* fr */,
+				A676AEBE13500348002BEE01 /* de */,
+				A676AEC513500497002BEE01 /* es */,
+				A676AEC6135004F4002BEE01 /* it */,
+				A676AEC71350053C002BEE01 /* ja */,
+				A676AEC913500703002BEE01 /* ru */,
+				A676AECA13500817002BEE01 /* zh-Hans */,
+				A676AECB1350087A002BEE01 /* zh-Hant */,
+				A676AECC13500EE3002BEE01 /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A68D617313085AFC008320AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68D617413085AFC008320AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A68D617F13085AFC008320AF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68D618013085AFC008320AF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A68D618E13085AFD008320AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68D618F13085AFD008320AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A68D619613085AFD008320AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A68D619713085AFD008320AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A68D619913085AFD008320AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App Snap/App_Snap-Prefix.pch";
+				INFOPLIST_FILE = "App Snap/App_Snap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A68D619A13085AFD008320AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App Snap/App_Snap-Prefix.pch";
+				INFOPLIST_FILE = "App Snap/App_Snap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A68D619C13085AFD008320AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/App Snap.app/Contents/MacOS/App Snap";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App SnapTests/App_SnapTests-Prefix.pch";
+				INFOPLIST_FILE = "App SnapTests/App_SnapTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A68D619D13085AFD008320AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/App Snap.app/Contents/MacOS/App Snap";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App SnapTests/App_SnapTests-Prefix.pch";
+				INFOPLIST_FILE = "App SnapTests/App_SnapTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A68D616013085AFC008320AF /* Build configuration list for PBXProject "App Snap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68D619613085AFD008320AF /* Debug */,
+				A68D619713085AFD008320AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A68D619813085AFD008320AF /* Build configuration list for PBXNativeTarget "App Snap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68D619913085AFD008320AF /* Debug */,
+				A68D619A13085AFD008320AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A68D619B13085AFD008320AF /* Build configuration list for PBXNativeTarget "App SnapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68D619C13085AFD008320AF /* Debug */,
+				A68D619D13085AFD008320AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A68D615D13085AFC008320AF /* Project object */;
+}

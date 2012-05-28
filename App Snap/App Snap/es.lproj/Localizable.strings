@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  App Snap
+
+  Created by Ryan Renna on 11-04-08.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+"Save As..." = "Save As...";
+"OK" = "Aceptar";
+"Close" = "Cerrar";
+"ios simulator" = "simulador ios";
+"I'm sorry but..." = "Lo siento, pero ...";
+"No Window Selected" = "No hay ventanas seleccionadas";
+"Window must be on screen" = "Ventana debe ser en la pantalla";
+"A valid window is not selected." = "Una ventana válida no está seleccionada.";
+"You don't seem to have an instance of the iOS Simulator open." = "No parece haber una instancia de la apertura iOS simulador.";
+"You don't seem to have an instance of the Android Simulator open." = "No parece haber una instancia de la abierta Android simulador.";
+"App Snap doesn't currently support multiple viewing devices, move the window to your primary monitor." = "Ajustar la aplicación no es compatible con varios dispositivos de visión, mover la ventana a su monitor principal.";
+"Select the window of the Mac App you would like to Snap" = "Seleccione la ventana de la aplicación que desea Snap";
+"Crops out the iPhone or iPad simulator. Required for uploading to iTunes Connect" = "Corta el iPhone o el simulador de IPAD. Se requiere para subir a iTunes Connect";
+"Crops out the Android simulator" = "Corta el simulador de Android";
+"Saves every Snap to the chosen location" = "Guarda todos los Snap a la ubicación elegida";

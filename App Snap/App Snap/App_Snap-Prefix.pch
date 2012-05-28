@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'App Snap' target in the 'App Snap' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import "Constants.h"
+#endif
